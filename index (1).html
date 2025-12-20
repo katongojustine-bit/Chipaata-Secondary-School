@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chipaata Day Secondary School</title>
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --secondary: #ff9a3c;
+            --light: #f5f0e1;
+            --dark: #333;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f8f9fa;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #2e7d32);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0;
+        }
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            display: block;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        nav a:hover, nav a.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        section {
+            padding: 3rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .staff-stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .stat-box {
+            background: var(--light);
+            padding: 1.5rem;
+            border-radius: 8px;
+            flex: 1;
+            margin: 0 10px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+            }
+            .staff-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Chipaata Day Secondary School</h1>
+            <p>Co-Education Excellence in Chitambo District</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#staff">Staff</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#student-life">Student Life</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2 class="section-header">Welcome to Chipaata</h2>
+            <div class="card">
+                <p>Chipaata Day Secondary School is a co-educational institution serving the community of Chitambo District in Central Province. The school maintains a focused learning environment, offers equal opportunities to all learners, and is committed to academic growth and responsible conduct.</p>
+                
+                <h3 style="margin-top: 1.5rem; color: var(--primary);">Latest Updates</h3>
+                <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                    <li>Term 3 examinations begin November 30, 2025</li>
+                    <li>Annual sports day scheduled for December 12, 2025</li>
+                    <li>New science laboratory equipment installed</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-header">About Us</h2>
+            <div class="card">
+                <h3>School Background</h3>
+                <p>Established to serve the educational needs of Chitambo District, Chipaata Day Secondary School has been a pillar of academic excellence since its founding. Our institution has grown to become a model for community-based education in Central Province.</p>
+                
+                <h3>Co-Education Approach</h3>
+                <p>We believe in providing equal opportunities for all students. Our co-educational environment fosters mutual respect, collaboration, and prepares students for diverse real-world interactions. Both genders participate equally in all academic and extracurricular activities.</p>
+                
+                <h3>Leadership</h3>
+                <p>Under the guidance of Principal Justine Katongo, our leadership team is committed to maintaining high educational standards while nurturing responsible citizenship among our students.</p>
+                
+                <h3>Community Role</h3>
+                <p>We actively engage with the Chitambo community through outreach programs, adult education initiatives, and cultural preservation projects. The school serves as a community hub for educational and social development.</p>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h2 class="section-header">Academics</h2>
+            <div class="card">
+                <h3>Subjects Offered</h3>
+                <p>Our curriculum includes Mathematics, English, Physical Science, Biology, History, Geography, Civic Education, Computer Studies, Agricultural Science, and Local Languages.</p>
+                
+                <h3>Learning Programs</h3>
+                <p>We offer comprehensive programs including:
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Remedial classes for struggling students</li>
+                    <li>Advanced placement for gifted learners</li>
+                    <li>STEM enrichment programs</li>
+                    <li>Career guidance workshops</li>
+                </ul>
+                </p>
+                
+                <h3>Examination Support</h3>
+                <p>We provide specialized preparation for national examinations including:
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Weekly mock examinations</li>
+                    <li>Examination technique workshops</li>
+                    <li>Personalized revision timetables</li>
+                    <li>Stress management sessions</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="staff">
+            <h2 class="section-header">Our Staff</h2>
+            <div class="card">
+                <div class="staff-stats">
+                    <div class="stat-box">
+                        <h3>Total Staff</h3>
+                        <p style="font-size: 2rem; font-weight: bold; color: var(--primary);">25</p>
+                    </div>
+                    <div class="stat-box">
+                        <h3>Female Staff</h3>
+                        <p style="font-size: 2rem; font-weight: bold; color: var(--primary);">6</p>
+                    </div>
+                </div>
+                
+                <h3>Roles and Responsibilities</h3>
+                <p>Our dedicated team includes:
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>12 Subject-specialized teachers</li>
+                    <li>3 Administrative staff</li>
+                    <li>5 Support staff</li>
+                    <li>2 Guidance counselors</li>
+                    <li>3 Laboratory and library technicians</li>
+                </ul>
+                </p>
+                <p>All staff members participate in continuous professional development to maintain high teaching standards.</p>
+            </div>
+        </section>
+
+        <section id="admissions">
+            <h2 class="section-header">Admissions</h2>
+            <div class="card">
+                <h3>Enrollment Guidelines</h3>
+                <p>Admission is open to all qualifying students from Chitambo District and surrounding areas. Priority is given to students from feeder primary schools in our catchment area.</p>
+                
+                <h3>Requirements</h3>
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Completed application form</li>
+                    <li>Grade 7 school leaving certificate</li>
+                    <li>Birth certificate</li>
+                    <li>Two passport-sized photographs</li>
+                    <li>Medical report from recognized clinic</li>
+                </ul>
+                
+                <h3>Important Dates</h3>
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Application period: January 5-30 annually</li>
+                    <li>Entrance tests: First week of February</li>
+                    <li>Admission letters: March 1</li>
+                    <li>Orientation: April 10</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="student-life">
+            <h2 class="section-header">Student Life</h2>
+            <div class="card">
+                <h3>Clubs and Activities</h3>
+                <p>Students can participate in:
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Science and Technology Club</li>
+                    <li>Debating Society</li>
+                    <li>Environmental Club</li>
+                    <li>Cultural Dance Troupe</li>
+                    <li>Sports (Football, Netball, Athletics)</li>
+                </ul>
+                </p>
+                
+                <h3>School Culture</h3>
+                <p>We foster an environment of mutual respect, academic excellence, and community responsibility. Our motto "Learn, Grow, Serve" reflects our commitment to holistic education.</p>
+                
+                <h3>Support Services</h3>
+                <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                    <li>Career counseling</li>
+                    <li>Peer tutoring program</li>
+                    <li>Health and wellness services</li>
+                    <li>Scholarship assistance</li>
+                    <li>Transportation support</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-header">Contact Us</h2>
+            <div class="card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Email:</strong> katongojustine@gmail.com
+                    </div>
+                    <div class="contact-item">
+                        <strong>Phone:</strong> +260 973 621 333
+                    </div>
+                    <div class="contact-item">
+                        <strong>Location:</strong> Chitambo District, Central Province, Zambia
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; height: 300px; background: var(--light); border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+                    <p>School Location Map Would Appear Here</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Chipaata Day Secondary School. All Rights Reserved.</p>
+        <p style="margin-top: 0.5rem;">Chitambo District, Central Province, Zambia</p>
+    </footer>
+
+    <script>
+        // Simple navigation active class management
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Update active link on scroll
+        window.addEventListener('
+\<Streaming stoppped because the conversation grew too long for this model\>
